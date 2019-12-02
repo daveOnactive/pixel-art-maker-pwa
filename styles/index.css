@@ -1,0 +1,160 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url("./images/—Pngtree—super mario cartoon background_191276.jpg") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  font-family: sans-serif;
+  line-height: 1.6;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  color: #fbf8ef;
+}
+
+header h1 {
+  text-shadow: 0 0 6px #000;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 640px) {
+  form {
+    width: 500px;
+  }
+}
+
+form label {
+  display: block;
+  font-size: 0.7rem;
+  color: #fbf8ef;
+  font-weight: bold;
+}
+
+form input[type='number'] {
+  width: 50%;
+  padding: 0.3rem 1rem;
+  outline: none;
+  border: 2px solid #6060f8;
+}
+
+table {
+  text-align: center;
+  margin: 1rem auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background: #fff;
+  border: 2px solid #f8f8f8;
+}
+
+table td {
+  border: 0.5px solid rgba(136, 136, 136, 0.795);
+  width: 10px;
+  height: 10px;
+}
+
+#create-board {
+  background: #f8f8f8;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0.4rem 0.7rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+#create-board:hover {
+  background: #34f334;
+  color: #fff;
+}
+
+#btn {
+  text-align: center;
+}
+
+#btn button {
+  margin: 1rem 0.5rem;
+  padding: 0.3rem 1.2rem;
+  background: #f8f8f8;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#btn button:hover {
+  background: #34f334;
+  color: #fff;
+}
+
+#color {
+  text-align: center;
+  width: 50px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.change {
+  border: none;
+}
+
+#zoomBtn {
+  text-align: center;
+}
+
+#zoomBtn #zoomOut, #zoomBtn #zoomIn {
+  width: 30px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  background: #f8f8f8;
+}
+
+#zoomBtn #zoomOut:hover, #zoomBtn #zoomIn:hover {
+  background: #34f334;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

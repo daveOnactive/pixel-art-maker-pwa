@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2775fb">
+    <meta name="msapplication-TileColor" content="#2775fb">
+    <meta name="theme-color" content="#2775fb">
+    <title>Pixel Art Maker</title>
+</head>
+<body>
+  <header>
+    <h1>Pixel Art Maker</h1>
+  </header>
+
+  <main>
+    <form>
+      <div>
+        <label for="">height</label>
+        <input type="number" id="column">
+      </div>
+      <div>
+        <label for="">width</label>
+        <input type="number" id="row">
+      </div>
+    </form>
+    <button id="create-board">create board</button>
+    <div id="zoomBtn">
+      <button id="zoomOut">+</button>
+      <button id="zoomIn">-</button>
+    </div>
+  </main>
+  
+  <input type="color" id="color">
+  <table id="grid"></table>
+
+  <div id="btn">
+    <button id="clear">Clear</button>
+    <button id="delete">Delete</button>
+    <button id="draw">Draw</button>
+  </div>
+  <script src="/src/index.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', async () => {
+        try {
+          const registration = await navigator.serviceWorker.register('index.sw.js');
+          console.log(`Service Worker register successful`);
+          console.log(`Registration with scope: ${registration.scope}`);
+        } catch (e) {
+          debugger;
+          console.log('Service worker registration failed');
+          console.log(e);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
