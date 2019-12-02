@@ -1,10 +1,16 @@
 const CACHE_NAME = 'SITE_CONTENT_V1';
 
 const urlsToCache = [
-  '/src/styles/index.css',
-  '/src/styles/images/—Pngtree—super mario cartoon background_191276.jpg',
-  '/src/index.html',
-  '/src/index.js'
+  'styles/index.css',
+  'styles/images/—Pngtree—super mario cartoon background_191276.jpg',
+  'index.html',
+  'index.js',
+
+  'apple-touch-icon.png',
+  'favicon-32x32.png',
+  'favicon-16x16.png',
+  'site.webmanifest',
+  'safari-pinned-tab.svg'
 ];
 
 self.addEventListener('install', event => {
