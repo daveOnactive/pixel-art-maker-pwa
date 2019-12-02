@@ -62,5 +62,16 @@
       });
     }
   </script>
+  <script>
+    window.addEventListener('beforeinstallprompt', evt => {
+      evt.userChoice.then(choice => {
+        let message = choice.outcome === 'dismissed' ? 'User cancelled' : 'User installed';
+      });
+    });
+
+    window.addEventListener('appinstalled', evt => {
+      console.log('The app was installed');
+    });
+  </script>
 </body>
 </html>
